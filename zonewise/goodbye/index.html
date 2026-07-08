@@ -21,6 +21,7 @@
     @media (prefers-color-scheme: dark){ .btn.ghost { color:#6cb4eb !important; border-color:#6cb4eb; } }
     .form-wrap { margin-top: 1rem; }
     iframe { width:100%; border:0; border-radius:12px; }
+    .alt { font-size: 0.9rem; color:#888; margin-top: 0.6rem; }
     footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e4e8ee; font-size: 0.85rem; color: #888; }
     @media (prefers-color-scheme: dark){ footer { border-top-color:#24313f; } }
   </style>
@@ -33,18 +34,10 @@
 
   <h2>What made you uninstall?</h2>
 
-  <!--
-    GOOGLE FORM GOES HERE.
-    When the feedback Google Form exists, paste its embed iframe inside .form-wrap and delete the
-    .fallback block below. Get the embed code from the Form: Send → < > (embed HTML). Example:
-    <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" height="900"
-            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  -->
   <div class="form-wrap">
-    <div class="fallback">
-      <p>Send us one line — what was missing, confusing, or broken?</p>
-      <p><a class="btn" href="mailto:lorin.symington@gmail.com?subject=UTC%20Time%20Converter%20feedback&amp;body=I%20uninstalled%20because%3A%20">Email your feedback</a></p>
-    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckPHjj9m2u4rmVL-3kd7ePUrQUxth_bdOCycUGVGWPKSJWcw/viewform?embedded=true"
+            height="1100" title="UTC Time Converter feedback form" loading="lazy">Loading…</iframe>
+    <p class="alt">Form not loading? <a href="mailto:lorin.symington@gmail.com?subject=UTC%20Time%20Converter%20feedback&amp;body=I%20uninstalled%20because%3A%20">Email your feedback</a> instead.</p>
   </div>
 
   <h2>Changed your mind?</h2>
