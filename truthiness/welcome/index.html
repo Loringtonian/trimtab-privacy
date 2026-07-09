@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Fact Checker · Trimtab Labs</title>
+  <meta name="description" content="Getting started with Fact Checker — a free fact checker for Chrome. Select any text, right-click, and fact-check each claim: verify or debunk it, true or false, and spot misinformation in AI-written text.">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           max-width: 780px; margin: 0 auto; padding: 40px 20px 64px; line-height: 1.6; color: #1a1a1a; }
+    @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #0f1620; } a { color: #6cb4eb; }
+      .card { background: #16202c; border-color: #24313f; } .pill { background:#16202c; border-color:#24313f;}
+      .legend { background:#16202c; border-color:#24313f; } }
+    h1 { font-size: 1.9rem; margin: 0 0 0.3rem; }
+    .tag { color: #c2643c; font-weight: 600; }
+    .lead { font-size: 1.05rem; }
+    .meta { color: #888; font-size: 0.9rem; }
+    h2 { font-size: 1.25rem; margin-top: 2.2rem; }
+    ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 1rem 0 0; }
+    ol.steps > li { counter-increment: step; margin: 0 0 1rem; padding: 0; }
+    .card { border: 1px solid #e4e8ee; border-radius: 12px; overflow: hidden; }
+    .card .hd { display: flex; align-items: baseline; gap: 0.6rem; padding: 14px 16px; }
+    .card .num { display:inline-flex; align-items:center; justify-content:center; min-width: 1.6rem; height:1.6rem;
+                 border-radius: 999px; background:#c2643c; color:#fff; font-weight:700; font-size:0.9rem; }
+    .card .num::before { content: counter(step); }
+    .card h3 { margin: 0; font-size: 1.05rem; }
+    .card p { margin: 0 16px 12px 3.2rem; color:#555; font-size: 0.96rem; }
+    @media (prefers-color-scheme: dark){ .card p { color:#a7b4c2; } }
+    ul.tips { padding-left: 1.1rem; }
+    ul.tips li { margin: 0.3rem 0; }
+    .cta { display:inline-block; margin-top: 0.4rem; background:#c2643c; color:#fff !important; text-decoration:none;
+           padding: 10px 18px; border-radius: 10px; font-weight:600; }
+    .pill { display:inline-block; border:1px solid #e4e8ee; border-radius:999px; padding:2px 10px; font-size:0.85rem; color:#666; margin:2px 4px 2px 0; }
+    @media (prefers-color-scheme: dark){ .pill { color:#a7b4c2; } }
+    .legend { border:1px solid #e4e8ee; border-radius:12px; padding:14px 16px; margin-top:1rem; }
+    .legend ul { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); gap:6px 16px; }
+    .legend li { display:flex; align-items:center; gap:9px; }
+    .dot { width:11px; height:11px; border-radius:50%; flex:0 0 auto; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e4e8ee; font-size: 0.85rem; color: #888; }
+    @media (prefers-color-scheme: dark){ footer { border-top-color:#24313f; } }
+  </style>
+</head>
+<body>
+  <p class="meta">Trimtab Labs · Chrome extension</p>
+  <h1>You're all set — <span class="tag">Fact Checker</span></h1>
+  <p class="lead">Thanks for installing! <strong>Fact Checker</strong> is a free fact checker built
+  right into your right-click menu. Select any text — a sentence, a paragraph, an AI answer, a viral
+  post — and it will <strong>fact-check each claim</strong>: verify it or debunk it, true or false,
+  and flag the misinformation that polished wording can hide.</p>
+
+  <div>
+    <span class="pill">fact check</span>
+    <span class="pill">verify a claim</span>
+    <span class="pill">debunk</span>
+    <span class="pill">true or false</span>
+    <span class="pill">check facts</span>
+    <span class="pill">misinformation</span>
+    <span class="pill">AI-written text</span>
+  </div>
+
+  <h2>Fact-check anything in 10 seconds</h2>
+  <ol class="steps">
+    <li>
+      <div class="card">
+        <div class="hd"><span class="num"></span><h3>Select the text you want to check</h3></div>
+        <p>Highlight a claim, a sentence, or a whole paragraph on any web page — a news story, an AI
+        answer, a social post.</p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <div class="hd"><span class="num"></span><h3>Right-click → “Fact-check selection”</h3></div>
+        <p>Choose <strong>Fact-check selection</strong> from the right-click menu. That's the whole
+        interface — there's nothing to set up, no account, and no API key.</p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <div class="hd"><span class="num"></span><h3>Read the per-claim verdicts</h3></div>
+        <p>A panel opens on the page with each distinct claim, a color-coded verdict, the reasoning,
+        any omitted nuance, and the sources the check relied on.</p>
+      </div>
+    </li>
+  </ol>
+
+  <h2>What each verdict means</h2>
+  <div class="legend">
+    <ul>
+      <li><span class="dot" style="background:#1a7f37"></span>accurate</li>
+      <li><span class="dot" style="background:#6f9b1a"></span>partially accurate</li>
+      <li><span class="dot" style="background:#b8860b"></span>oversimplified</li>
+      <li><span class="dot" style="background:#c2643c"></span>misleading</li>
+      <li><span class="dot" style="background:#c2643c"></span>unreliable</li>
+      <li><span class="dot" style="background:#c0392b"></span>inaccurate</li>
+      <li><span class="dot" style="background:#6b7280"></span>unverifiable</li>
+      <li><span class="dot" style="background:#6b7280"></span>unfalsifiable</li>
+    </ul>
+  </div>
+
+  <h2>Free &amp; private</h2>
+  <ul class="tips">
+    <li><strong>Completely free</strong> — no account, no sign-up, no API key.</li>
+    <li><strong>Forward-and-forget</strong> — your selected text is sent only to run the check and is never stored on our server.</li>
+    <li><strong>Minimal by design</strong> — to help judge a claim, the check also sees the page's domain and title (never the full URL), and nothing for local or private pages.</li>
+    <li><strong>No tracking</strong> — no analytics, no ads, no browsing history, no selling your data.</li>
+  </ul>
+
+  <h2>Enjoying it?</h2>
+  <p>A quick rating helps other people find the extension.
+  <!-- STORE_URL: replace with the live Chrome Web Store listing URL once published -->
+  <br><a class="cta" href="https://chromewebstore.google.com/" target="_blank" rel="noopener">Leave a rating on the Chrome Web Store</a></p>
+
+  <footer>
+    <strong>Trimtab Labs</strong> · <a href="../">Privacy policy</a> ·
+    <a href="mailto:lorin.symington@gmail.com">Contact</a><br>
+    Fact Checker is free and forward-and-forget. It never stores the text you check, sells your data, or tracks your browsing.
+  </footer>
+</body>
+</html>

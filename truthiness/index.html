@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Truthiness — Privacy Policy · Trimtab Labs</title>
+  <title>Fact Checker — Privacy Policy · Trimtab Labs</title>
   <style>
     :root { color-scheme: light dark; }
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -18,55 +18,52 @@
   </style>
 </head>
 <body>
-  <h1>Truthiness — Privacy Policy</h1>
-  <p class="meta">Publisher: <strong>Trimtab Labs</strong> · Effective date: 25 June 2026<br>
-  Applies to the <em>Truthiness — Fact-Check Any Selection</em> Chrome extension.</p>
+  <h1>Fact Checker — Privacy Policy</h1>
+  <p class="meta">Publisher: <strong>Trimtab Labs</strong> · Effective date: 9 July 2026<br>
+  Applies to the <em>Fact Checker</em> Chrome extension (internal name "Truthiness").</p>
 
-  <p>Truthiness fact-checks text you explicitly select. It is built to collect as little as possible and to
-  <strong>forward and forget</strong> — the text you check is never stored on our server.</p>
+  <p>Fact Checker fact-checks text you explicitly select. It is completely free — no account, no
+  sign-up, and no API key — and it is built to collect as little as possible and to
+  <strong>forward and forget</strong>: nothing you check is stored on our server.</p>
 
   <h2>What gets sent, and where</h2>
-  <p>A fact-check runs only when you select text and choose a Truthiness action. The selected text is then
-  sent to an AI model to be checked:</p>
+  <p>A fact-check runs only when you select text and choose <strong>“Fact-check selection.”</strong>
+  When you do, the following is sent through our own proxy to Google Gemini, which returns the
+  per-claim verdicts:</p>
   <ul>
-    <li><strong>Free Quick check (default):</strong> the selection is sent through our proxy to Google
-    Gemini and the result is returned to you. The proxy does <strong>not</strong> store, log, or retain the
-    text — only anonymous aggregate counts (for rate-limiting and totals). On this free tier, the AI
-    provider (Google) may use submitted content to improve its models under its own terms.</li>
-    <li><strong>Verify (optional paid tier):</strong> the selection is sent through our proxy to xAI (Grok)
-    with live web search, and the result — including source links — is returned to you. The proxy does not
-    store the text.</li>
-    <li><strong>Bring-your-own-key (optional):</strong> if you enter your own Google, xAI, or OpenAI API key
-    in Options, the selection is sent <strong>directly from your browser to that provider</strong> using
-    your key and does <strong>not</strong> pass through our server. Your key is stored locally on your
-    device only.</li>
+    <li><strong>The text you selected.</strong> Only that selection — never the whole page.</li>
+    <li><strong>Light page context: the site’s domain and the page title</strong> (for example,
+    <code>example.com</code> and “Example headline”). This helps the model understand what a claim
+    refers to. We send <strong>only the domain and title</strong> — never the full URL, path, or
+    query string — and we do <strong>not</strong> send any context for <code>chrome://</code>,
+    <code>file://</code>, local, or private/intranet pages.</li>
   </ul>
+  <p>Our proxy does <strong>not</strong> store, log, or retain the selected text, the domain, or the
+  title — it forwards them to run the check and keeps only anonymous aggregate counts (for
+  rate-limiting and totals). Because this is a free service, the AI provider (Google) may use
+  submitted content to improve its models under its own terms.</p>
 
   <h2>What we store</h2>
-  <p>On our server: a random install identifier (used only for rate-limiting and abuse prevention) and,
-  <strong>if you subscribe</strong>, your subscription status tied to that identifier. We do
-  <strong>not</strong> store your email or the text you check. In your browser: your settings and the
-  install identifier (<code>chrome.storage.local</code>).</p>
-
-  <h2>Payments</h2>
-  <p>Subscriptions are processed by <strong>Stripe</strong>. Your email and payment details are handled by
-  Stripe under Stripe's privacy policy; we receive only whether an active subscription exists for your
-  install. We never see or store your card details.</p>
+  <p>On our server: a random install identifier (used only for rate-limiting and abuse prevention)
+  and anonymous aggregate counts. We do <strong>not</strong> store your email, the text you check,
+  or the pages you visit. In your browser: only that random install identifier
+  (<code>chrome.storage.local</code>). There are no settings to save — the extension has no options
+  to configure.</p>
 
   <h2>What we do not do</h2>
-  <p>No analytics, no tracking, no advertising, no selling or sharing of data, and no access to your
-  browsing history. The extension reads page content only for the specific selection you fact-check, only
-  when you trigger it.</p>
+  <p>No accounts, no API keys, no payments. No analytics, no tracking, no advertising, no selling or
+  sharing of data, and no access to your browsing history. The extension reads page content only for
+  the specific selection you fact-check, only when you trigger it.</p>
 
   <h2>Permissions</h2>
-  <p><code>contextMenus</code> (the right-click actions), <code>storage</code> (your settings + install id),
-  <code>activeTab</code> + <code>scripting</code> (to draw the results panel on the page when you click),
-  and host access limited to our proxy and the supported AI providers (used only to run a check you
-  initiated).</p>
+  <p><code>contextMenus</code> (the right-click action), <code>storage</code> (the random install
+  id), <code>activeTab</code> + <code>scripting</code> (to read your selection and draw the results
+  panel on the page when you click), and host access limited to our own proxy
+  (<code>truthiness-proxy.fly.dev</code>), used only to run a check you initiated.</p>
 
   <h2>Limited Use</h2>
-  <p>Truthiness's use of information complies with the Chrome Web Store User Data Policy, including the
-  Limited Use requirements.</p>
+  <p>Fact Checker’s use of information complies with the Chrome Web Store User Data Policy, including
+  the Limited Use requirements.</p>
 
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="mailto:lorin.symington@gmail.com">lorin.symington@gmail.com</a></p>
