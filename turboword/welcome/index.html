@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome to Speed Reader · Trimtab Labs</title>
+  <meta name="description" content="Getting started with Speed Reader — a free speed reader for Chrome. Paste or select text, press Play, and read faster: it flashes one word at a time (RSVP) at a words-per-minute pace you set.">
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+           max-width: 780px; margin: 0 auto; padding: 40px 20px 64px; line-height: 1.6; color: #1a1a1a; }
+    @media (prefers-color-scheme: dark) { body { color: #e6e6e6; background: #0f1620; } a { color: #6cb4eb; }
+      .card { background: #16202c; border-color: #24313f; } .pill { background:#16202c; border-color:#24313f;} }
+    h1 { font-size: 1.9rem; margin: 0 0 0.3rem; }
+    .tag { color: #3b5bdb; font-weight: 600; }
+    .lead { font-size: 1.05rem; }
+    .meta { color: #888; font-size: 0.9rem; }
+    h2 { font-size: 1.25rem; margin-top: 2.2rem; }
+    ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 1rem 0 0; }
+    ol.steps > li { counter-increment: step; margin: 0 0 1rem; padding: 0; }
+    .card { border: 1px solid #e4e8ee; border-radius: 12px; overflow: hidden; }
+    .card .hd { display: flex; align-items: baseline; gap: 0.6rem; padding: 14px 16px; }
+    .card .num { display:inline-flex; align-items:center; justify-content:center; min-width: 1.6rem; height:1.6rem;
+                 border-radius: 999px; background:#3b5bdb; color:#fff; font-weight:700; font-size:0.9rem; }
+    .card .num::before { content: counter(step); }
+    .card h3 { margin: 0; font-size: 1.05rem; }
+    .card p { margin: 0 16px 12px 3.2rem; color:#555; font-size: 0.96rem; }
+    @media (prefers-color-scheme: dark){ .card p { color:#a7b4c2; } }
+    ul.tips { padding-left: 1.1rem; }
+    ul.tips li { margin: 0.3rem 0; }
+    .cta { display:inline-block; margin-top: 0.4rem; background:#3b5bdb; color:#fff !important; text-decoration:none;
+           padding: 10px 18px; border-radius: 10px; font-weight:600; }
+    .pill { display:inline-block; border:1px solid #e4e8ee; border-radius:999px; padding:2px 10px; font-size:0.85rem; color:#666; margin:2px 4px 2px 0; }
+    @media (prefers-color-scheme: dark){ .pill { color:#a7b4c2; } }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #e4e8ee; font-size: 0.85rem; color: #888; }
+    @media (prefers-color-scheme: dark){ footer { border-top-color:#24313f; } }
+  </style>
+</head>
+<body>
+  <p class="meta">Trimtab Labs · Chrome extension</p>
+  <h1>You're all set — <span class="tag">Speed Reader</span></h1>
+  <p class="lead">Thanks for installing! <strong>Speed Reader</strong> is a free speed reader that
+  flashes your text <strong>one word at a time</strong> so your eyes stop wandering and you
+  <strong>read faster</strong> — often twice as fast within a few sessions. Paste anything, or
+  right-click any text on any page, and it plays the words to you at a speed you control.</p>
+
+  <div>
+    <span class="pill">speed reader</span>
+    <span class="pill">read faster</span>
+    <span class="pill">speed reading</span>
+    <span class="pill">RSVP reader</span>
+    <span class="pill">words per minute</span>
+    <span class="pill">fullscreen reader</span>
+  </div>
+
+  <h2>Start reading faster in 10 seconds</h2>
+  <ol class="steps">
+    <li>
+      <div class="card">
+        <div class="hd"><span class="num"></span><h3>Give it some text</h3></div>
+        <p>Click the toolbar icon and paste text into the popup — or highlight text on any page,
+        right-click, and choose <strong>“Speed-read selection.”</strong></p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <div class="hd"><span class="num"></span><h3>Press Play</h3></div>
+        <p>The reader goes fullscreen and flashes one word at a time, with the focus letter
+        highlighted so your eye locks onto the right spot. Press <strong>Esc</strong> to exit.</p>
+      </div>
+    </li>
+    <li>
+      <div class="card">
+        <div class="hd"><span class="num"></span><h3>Push the speed up</h3></div>
+        <p>Slide the <strong>WPM</strong> (words per minute) control higher as your brain adapts.
+        Start comfortable, then climb — most readers comfortably double their reading speed.</p>
+      </div>
+    </li>
+  </ol>
+
+  <h2>Good to know</h2>
+  <ul class="tips">
+    <li><strong>Built-in WPM test</strong> — read a passage and watch your reading speed climb.</li>
+    <li><strong>One word or chunks</strong> — a single word for maximum speed, or two or three together for context.</li>
+    <li><strong>Your colours</strong> — System, Match page, Light, Dark, or fully custom; pick your font and text size.</li>
+    <li><strong>Completely free</strong> — no account, no sign-up, no subscription.</li>
+    <li><strong>Private by design</strong> — everything runs on your device. No network requests, no tracking, no ads. Speed Reader never stores or sends the text you read.</li>
+  </ul>
+
+  <h2>Enjoying it?</h2>
+  <p>A quick rating helps other people find the extension.
+  <!-- Reinstall/rating CTA: item ID unknown until the dashboard item is created — using the CWS
+       search URL as a safe interim. Swap to https://chromewebstore.google.com/detail/<ITEM_ID>
+       once Speed Reader is uploaded and its 32-char item ID is known. -->
+  <br><a class="cta" href="https://chromewebstore.google.com/search/speed%20reader" target="_blank" rel="noopener">Find Speed Reader on the Chrome Web Store</a></p>
+
+  <footer>
+    <strong>Trimtab Labs</strong> · <a href="../">Privacy policy</a> ·
+    <a href="mailto:lorin.symington@gmail.com">Contact</a><br>
+    Speed Reader is free and runs entirely on your device. It never stores the text you read, sells your data, or tracks your browsing.
+  </footer>
+</body>
+</html>
